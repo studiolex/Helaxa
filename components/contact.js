@@ -1,4 +1,3 @@
-import Contactform from "./Contactform.js";
 import { useForm, ValidationError } from "@formspree/react";
 import Contactperson from "../components/contactperson.js";
 
@@ -21,7 +20,6 @@ function Contact() {
           </div>
         </div>
       </section>{" "}
-      {/* <Contactform /> */}
       <section className="grid grid-cols-24 justify-center items-center ">
         <div className="col-start-3 col-end-25 xl:col-start-2">
           <div>
