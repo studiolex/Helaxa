@@ -13,7 +13,18 @@ function Gallery() {
   const [swiper, setSwiper] = React.useState();
   const prevRef = React.useRef();
   const nextRef = React.useRef();
-
+  const images = [
+    {
+      link: "Slitting",
+      href: "/images/slitting/slit_1.png",
+      placeholder: "Dit is een foto van een sliertje",
+    },
+    {
+      link: "Slitting",
+      href: "/images/slitting/slit_2.png",
+      placeholder: "Dit is een foto van een slitter",
+    },
+  ];
   React.useEffect(() => {
     if (swiper) {
       console.log("Swiper instance:", swiper);
@@ -74,7 +85,7 @@ function Gallery() {
           // }}
         >
           <div>
-            <SwiperSlide>
+            {/* <SwiperSlide>
               {" "}
               <div className="">
                 <Image
@@ -128,8 +139,19 @@ function Gallery() {
                   height={300}
                 />
               </div>
-            </SwiperSlide>
-            {/* <Galleryitems /> */}
+            </SwiperSlide> */}
+            {images.map((image) => (
+              <SwiperSlide key={image.placeholder}>
+                <div className="">
+                  <Image
+                    src={image.href}
+                    alt={image.placeholder}
+                    width={300}
+                    height={300}
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
           </div>
         </Swiper>
       </div>
