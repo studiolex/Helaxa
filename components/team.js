@@ -29,10 +29,10 @@ function Team({ contacts }) {
     <>
       <section className="grid grid-cols-24 justify-center items-center">
         {/* Title */}
-        <div className="col-start-3 lg:col-start-2 col-end-16 lg:col-end-17 ">
+        <div className="col-start-3 xl:col-start-2 lg:col-start-2 col-end-16 lg:col-end-17 sm:col-end-24 ">
           <div className="text-left">
             <p className="font-bold uppercase text-green">Contact</p>
-            <h1 className="text-3xl font-bold font-mono text-black">
+            <h1 className="text-3xl sm:text-2xl xs:text-xxl ss:text-xl font-bold font-mono text-black">
               Let’s connect and get to know eachother.
             </h1>
           </div>
@@ -56,7 +56,7 @@ function Team({ contacts }) {
         </div>
         {/* Contacts */}
         <h2 className="font-bold uppercase text-green hidden">Team</h2>
-        <div className="col-start-3 col-end-25 w-full z-0 lg:col-start-2 mt-20 ">
+        <div className="col-start-3 col-end-25 w-full z-0 lg:col-start-2 mt-20 md:mt-18 sm:mt-12 ">
           <Swiper
             modules={[Navigation, Pagination, Controller, Keyboard]}
             navigation={{

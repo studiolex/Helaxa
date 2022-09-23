@@ -25,7 +25,7 @@ function Slitting() {
             <p className="font-semibold text-xs  uppercase text-green">
               Slitting
             </p>
-            <h3 className="text-3xl sm:text-2xl xs:text-1xl ss:text-xl font-bold font-mono text-black">
+            <h3 className="text-3xl sm:text-2xl xs:text-xxl ss:text-xl font-bold font-mono text-black">
               Coil slitting
             </h3>
           </div>

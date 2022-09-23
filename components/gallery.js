@@ -25,7 +25,7 @@ function Gallery({ images }) {
 
   return (
     <>
-      <div className="col-start-3 xl:col-start-2 col-end-7 w-full z-0 mt-auto lg:col-start-2 lg:row-start-2 z-10">
+      <div className="col-start-3 xl:col-start-2 col-end-7 w-full mt-auto lg:col-start-2 lg:row-start-2 z-10">
         <div className="flex items-end my-8 space-x-10">
           <div
             className="swiper-button cursor-pointer transition ease-in-out delay-50 hover:-translate-r-1 hover:scale-110  duration-300 p-2"

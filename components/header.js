@@ -29,7 +29,7 @@ export default function Header() {
       {/* Title */}
       <div className="grid grid-cols-24 my-auto py-6 lg:py-20 sm:py-16 xs:py-10">
         <div className="col-start-3  xl:col-start-2 col-end-25 lg:col-end-24 mt-[4rem]">
-          <h1 className="text-3xl font-bold font-mono text-black md:text-2xl">
+          <h1 className="text-3xl font-bold font-mono text-black md:text-2xl sm:text-xl">
             Helaxa, <span className="text-green">your</span> stainless steel
             partner,
             <br className="lg:hidden" /> providing the service you{" "}

@@ -7,7 +7,7 @@ function Contact() {
   return (
     <article
       id="contact"
-      className="pt-20 mt-16 md:mt-0 md:pt-12 xs:pt-14 xs:mt-10 mb-28 lg:mb-20 md:mb-12 sm:mb-4 background lg:bg-white"
+      className="pt-28 mt-16  md:mt-0 sm:pt-28 xs:pt-20 xs:mt-10 mb-28 lg:mb-20 md:mb-12 sm:mb-4 background lg:bg-white"
     >
       <Team
         contacts={[
