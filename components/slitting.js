@@ -5,6 +5,8 @@ import Width from "../public/icons/width_green.svg";
 import SlittingIcon from "../public/icons/slitting_icon.svg";
 import slittingImg from "../public/images/home/slitting.png";
 
+const array = [{ img: "blabla" }];
+
 function Slitting() {
   return (
     <article className="pt-14 md:pt-20 xs:pt-14" id="slitting">

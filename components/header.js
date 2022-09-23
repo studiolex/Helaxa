@@ -39,21 +39,16 @@ export default function Header() {
         {/* Image */}
         <div className="col-span-2 lg:col-span-1 relative">
           <div className="relative w-full h-full">
-            <video
-              ref={videoRef}
-              controls
-              poster="images/home/stockholder_horizontal.png"
-              width="100%"
-              height="100%"
-            >
-              <source src="videos/helaxa_video.mp4" type="video/mp4"></source>
-              <p>Sorry your browser doesn`&apos`t support this video</p>
-            </video>
+            <source src="videos/helaxa_video.mp4" type="video/mp4"></source>
+
+            <source src="videos/helaxa_video.MP4" type="video/mp4"></source>
           </div>
           <div
             ref={videoButton}
             className="playbutton bg-green absolute rounded-full p-2 -right-14 top-[40%] bg-green/50 "
           >
+            {playVideo && <p>pauze</p>}
+            {!playVideo && <p>play</p>}
             <Videobutton />
           </div>
         </div>
