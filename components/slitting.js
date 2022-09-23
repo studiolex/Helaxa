@@ -88,7 +88,30 @@ function Slitting() {
       <section className="grid grid-cols-24">
         {" "}
         <h3 className="hidden">Slitting gallery</h3>
-        <Gallery />
+        <Gallery
+          images={[
+            {
+              link: "Slitting",
+              href: "/images/slitting/slit_1.png",
+              placeholder: "Dit is een foto van een sliertje",
+            },
+            {
+              link: "Slitting",
+              href: "/images/slitting/slit_2.png",
+              placeholder: "Dit is een foto van een slitter",
+            },
+            {
+              link: "Slitting",
+              href: "/images/slitting/slit_3.png",
+              placeholder: "Dit is een foto van een sliertje",
+            },
+            {
+              link: "Slitting",
+              href: "/images/slitting/slit_4.png",
+              placeholder: "Dit is een foto van een slitter",
+            },
+          ]}
+        />
       </section>
     </article>
   );

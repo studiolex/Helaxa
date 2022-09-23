@@ -8,10 +8,11 @@ body {
   margin: 0;
   font-weight: 300;
   scroll-behavior: smooth;
-
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   color: #414141;
+  background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 a {

@@ -7,9 +7,29 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import ArrowLeft from "../public/icons/arrow_left.svg";
 import ArrowRight from "../public/icons/arrow_right.svg";
-import Galleryitems from "../components/galleryitems.js";
-
-function Gallery() {
+const images = [
+  {
+    link: "Slitting",
+    href: "/images/slitting/slit_1.png",
+    placeholder: "Dit is een foto van een sliertje",
+  },
+  {
+    link: "Slitting",
+    href: "/images/slitting/slit_2.png",
+    placeholder: "Dit is een foto van een slitter",
+  },
+  {
+    link: "Slitting",
+    href: "/images/slitting/slit_3.png",
+    placeholder: "Dit is een foto van een sliertje",
+  },
+  {
+    link: "Slitting",
+    href: "/images/slitting/slit_4.png",
+    placeholder: "Dit is een foto van een slitter",
+  },
+];
+function Gallery({ images }) {
   const [swiper, setSwiper] = React.useState();
   const prevRef = React.useRef();
   const nextRef = React.useRef();
@@ -74,62 +94,16 @@ function Gallery() {
           // }}
         >
           <div>
-            <SwiperSlide>
-              {" "}
-              <div className="">
+            {images.map((image) => (
+              <SwiperSlide key={image.placeholder}>
                 <Image
-                  src="/images/slitting/slit_1.png"
-                  alt="Picture of Coil Slitting"
+                  src={image.href}
+                  alt={image.placeholder}
                   width={300}
                   height={300}
                 />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              {" "}
-              <div className="">
-                <Image
-                  src="/images/slitting/slit_2.png"
-                  alt="Picture of Coil Slitting"
-                  width={200}
-                  height={300}
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              {" "}
-              <div className="">
-                <Image
-                  src="/images/slitting/slit_3.png"
-                  alt="Picture of Coil Slitting"
-                  width={300}
-                  height={300}
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              {" "}
-              <div className="">
-                <Image
-                  src="/images/slitting/slit_4.png"
-                  alt="Picture of Coil Slitting"
-                  width={200}
-                  height={300}
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              {" "}
-              <div className="">
-                <Image
-                  src="/images/slitting/slit_5.png"
-                  alt="Picture of Coil Slitting"
-                  width={300}
-                  height={300}
-                />
-              </div>
-            </SwiperSlide>
-            {/* <Galleryitems /> */}
+              </SwiperSlide>
+            ))}
           </div>
         </Swiper>
       </div>

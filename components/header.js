@@ -1,26 +1,30 @@
 import Warehouse from "../public/icons/warehouse_green.svg";
 import Established from "../public/icons/established_green.svg";
 import Videobutton from "../public/icons/video_button.svg";
-// import myVideo from "../public/video/helaxa_video.mp4";
 
-import ReactPlayer from "react-player/youtube";
 import { useState, useRef } from "react";
-// import ReactPlayer from 'react-player/lazy'
 
 export default function Header() {
   const [playVideo, setPlayVideo] = useState(false);
   const videoButton = useRef(null);
+  const videoRef = useRef();
 
   const handlePlayVideo = (e) => {
     e.preventDefault();
-    console.log("gedrukt");
     setPlayVideo(true);
+    if (videoRef.current.paused) {
+      videoRef.current.play();
+      setPlayVideo(true);
+    } else {
+      setPlayVideo(false);
+      videoRef.current.pause();
+    }
   };
 
   return (
     <article className=" min-h-[100vh] flex flex-col justify-center">
       {/* Title */}
-      <div className="grid grid-cols-24 my-auto py-6 md:py-12">
+      <div className="grid grid-cols-24 my-auto py-6 md:py-20 ">
         <div className="col-start-3  xl:col-start-2 col-end-25 lg:col-end-24 mt-[4rem]">
           <h1 className="text-3xl font-bold font-mono text-black md:text-2xl">
             Helaxa, <span className="text-green">your</span> stainless steel
@@ -34,31 +38,19 @@ export default function Header() {
       <div className=" grid grid-cols-[.7fr_.7fr_1.2fr] lg:grid-cols-2 bg-lightgrey md:flex md:flex-col">
         {/* Image */}
         <div className="col-span-2 lg:col-span-1 relative">
-          <div className="relative ">
-            {/* <ReactPlayer
-              //   url="https://youtu.be/XOKuAy6Gfr8"
-              //   url="/video/helaxa_video.MP4"
-              url={myVideo}
-              width="100%"
-              height="100%"
-              className="absolute top-0 left-0"
-              //   controls={false}
-              playing={playVideo}
-              //   light="../public/images/home/stockholder_horizontal.png"
-            /> */}
-
+          <div className="relative w-full h-full">
             <video
+              ref={videoRef}
               controls
-              src="video/helaxa_video.MP4"
               poster="images/home/stockholder_horizontal.png"
               width="100%"
               height="100%"
             >
+              <source src="videos/helaxa_video.mp4" type="video/mp4"></source>
               <p>Sorry your browser doesn`&apos`t support this video</p>
             </video>
           </div>
           <div
-            onClick={handlePlayVideo}
             ref={videoButton}
             className="playbutton bg-green absolute rounded-full p-2 -right-14 top-[40%] bg-green/50 "
           >
@@ -66,12 +58,10 @@ export default function Header() {
           </div>
         </div>
         {/* Information */}
-        <div className="flex py-8 pl-24  pr-[26%] xl:pr-[12%] h-full flex-col justify-center space-y-10">
-          <p className="text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit arcu
-            enim, tellus eget euismod senectus enim suspendisse id. Stocholder
-            vitae amet tellus urna. Porta ac viverra eget egestas nec non tellus
-            vel. At neque enim lacus, venenatis.
+        <div className="flex py-2 pl-24  pr-[26%] xl:pr-[12%] lg:pr-[8%] h-full flex-col justify-center space-y-10  lg:space-y-6 md:space-y-16 md:py-20 sm:py-12 sm:px-6">
+          <p className="text-sm ">
+            Helaxa is a stainless steel service company founded in 2008 by Marc
+            Verbeeck.
           </p>
           <div className="grid grid-cols-2">
             <a className="text-sm font-bold uppercase pb-1">Watch video</a>
