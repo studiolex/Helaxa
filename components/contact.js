@@ -1,5 +1,5 @@
 import { useForm, ValidationError } from "@formspree/react";
-import Team from "../components/Team.js";
+import Team from "../components/team.js";
 
 function Contact() {
   const [state, handleSubmit] = useForm("xjvlvqrd");
