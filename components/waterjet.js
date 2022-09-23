@@ -67,28 +67,28 @@ function Waterjet() {
           <div className="w-full py-12 row-start-2 grid grid-cols-2 items-center gap-x-2 gap-y-12 xs:flex xs:flex-col xs:items-start sm:gap-y-8">
             <div className="flex items-center space-x-2">
               <Advantage />
-              <p className="font-medium uppercase text-lg lg:text-md tracking-wider">
+              <p className="font-medium uppercase text-lg lg:text-md sm:text-sm tracking-wider">
                 5-axis cutting head
               </p>
             </div>
             <div className="flex items-center justify-center space-x-2">
               <Advantage />
 
-              <p className="font-medium uppercase text-lg lg:text-md tracking-wider">
+              <p className="font-medium uppercase text-lg lg:text-md sm:text-sm tracking-wider">
                 2x 6000BAR
               </p>
             </div>
             <div className="flex items-center space-x-2">
               <Advantage />
 
-              <p className="font-medium uppercase text-lg lg:text-md tracking-wider">
+              <p className="font-medium uppercase text-lg lg:text-md sm:text-sm tracking-wider">
                 All materials
               </p>
             </div>
             <div className="flex items-center justify-center space-x-2">
               <Advantage />
 
-              <p className="font-medium uppercase text-lg lg:text-md tracking-wider">
+              <p className="font-medium uppercase text-lg lg:text-md sm:text-sm tracking-wider">
                 Any shape
               </p>
             </div>

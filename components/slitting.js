@@ -15,13 +15,13 @@ function Slitting() {
         {/* Slitting header*/}
         <div className="color-grey grid grid-cols-24 gap-2 bg-lightgrey pt-12 pb-10">
           {/* Icon*/}
-          <div className="col-start-3 xl:col-start-2 col-end-12  md:col-end-8 flex justify-end z-10 ">
+          <div className="col-start-3 xl:col-start-2 col-end-12  md:col-end-9 flex justify-end z-10 ">
             <div className=" ml-auto">
               <SlittingIcon />
             </div>
           </div>
           {/* Title*/}
-          <div className="col-start-13 md:col-start-9 col-end-23 md:col-end-24 my-auto">
+          <div className="col-start-13 md:col-start-10 col-end-23 md:col-end-24 my-auto">
             <p className="font-semibold text-xs  uppercase text-green">
               Slitting
             </p>
