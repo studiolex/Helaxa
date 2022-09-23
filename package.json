@@ -10,6 +10,7 @@
   "dependencies": {
     "@formspree/react": "^2.2.4",
     "@headlessui/react": "^1.7.2",
+    "@headlessui/tailwindcss": "^0.1.1",
     "add": "^2.0.6",
     "next": "12.0.9",
     "react": "17.0.2",

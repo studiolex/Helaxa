@@ -7,44 +7,12 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import ArrowLeft from "../public/icons/arrow_left.svg";
 import ArrowRight from "../public/icons/arrow_right.svg";
-const images = [
-  {
-    link: "Slitting",
-    href: "/images/slitting/slit_1.png",
-    placeholder: "Dit is een foto van een sliertje",
-  },
-  {
-    link: "Slitting",
-    href: "/images/slitting/slit_2.png",
-    placeholder: "Dit is een foto van een slitter",
-  },
-  {
-    link: "Slitting",
-    href: "/images/slitting/slit_3.png",
-    placeholder: "Dit is een foto van een sliertje",
-  },
-  {
-    link: "Slitting",
-    href: "/images/slitting/slit_4.png",
-    placeholder: "Dit is een foto van een slitter",
-  },
-];
+
 function Gallery({ images }) {
   const [swiper, setSwiper] = React.useState();
   const prevRef = React.useRef();
   const nextRef = React.useRef();
-  const images = [
-    {
-      link: "Slitting",
-      href: "/images/slitting/slit_1.png",
-      placeholder: "Dit is een foto van een sliertje",
-    },
-    {
-      link: "Slitting",
-      href: "/images/slitting/slit_2.png",
-      placeholder: "Dit is een foto van een slitter",
-    },
-  ];
+
   React.useEffect(() => {
     if (swiper) {
       console.log("Swiper instance:", swiper);
@@ -57,16 +25,16 @@ function Gallery({ images }) {
 
   return (
     <>
-      <div className="col-start-3 xl:col-start-2 col-end-7 w-full z-0 mt-auto lg:col-start-2 lg:row-start-2">
+      <div className="col-start-3 xl:col-start-2 col-end-7 w-full z-0 mt-auto lg:col-start-2 lg:row-start-2 z-10">
         <div className="flex items-end my-8 space-x-10">
           <div
-            className="swiper-button cursor-pointer transition ease-in-out delay-50 hover:-translate-r-1 hover:scale-110  duration-300"
+            className="swiper-button cursor-pointer transition ease-in-out delay-50 hover:-translate-r-1 hover:scale-110  duration-300 p-2"
             ref={prevRef}
           >
             <ArrowLeft />
           </div>
           <div
-            className="swiper-button cursor-pointer transition ease-in-out delay-50 hover:-translate-l-1 hover:scale-110  duration-300"
+            className="swiper-button cursor-pointer transition ease-in-out delay-50 hover:-translate-l-1 hover:scale-110  duration-300 p-2"
             ref={nextRef}
           >
             <ArrowRight />
@@ -104,23 +72,18 @@ function Gallery({ images }) {
           //   },
           // }}
         >
-          <div>
-            {/* {images.map((image) => (
-              <SwiperSlide key={image.placeholder}>
-))}</div> */}
-            {images.map((image) => (
-              <SwiperSlide key={image.placeholder}>
-                <div className="">
-                  <Image
-                    src={image.href}
-                    alt={image.placeholder}
-                    width={300}
-                    height={300}
-                  />
-                </div>
-              </SwiperSlide>
-            ))}
-          </div>
+          {images.map((image) => (
+            <SwiperSlide key={image.placeholder}>
+              <div className="">
+                <Image
+                  src={image.href}
+                  alt={image.placeholder}
+                  width={300}
+                  height={300}
+                />
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </>

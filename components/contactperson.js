@@ -7,40 +7,45 @@ import Image from "next/image";
 import Mail from "../public/icons/mail_bold_green.svg";
 import Phone from "../public/icons/phone_bold_green.svg";
 
-export default function Contactperson(props) {
+export default function Contactperson({ contacts }) {
   // const router = useRouter();
   // const path = router.pathname;
 
   return (
     <>
-      <div className="bg-lightgrey mr-12">
-        <Image
-          src="/images/contact/marcverbeeck.png"
-          alt="Picture of Marc Verbeeck"
-          width={399}
-          height={399}
-        />
-        <div className="p-4">
+      {contacts.map((contact) => (
+        <div className="bg-lightgrey mr-12" key={contact.mail}>
           <div>
-            <p className="text-darkgrey text-sm">{props.function}</p>
-            <h3 className="font-bold text-md uppercase">{props.name}</h3>
+            <Image
+              src={contact.image}
+              alt={contact.placeholder}
+              width={300}
+              height={300}
+              // placeholder="blur"
+            />
           </div>
-          <div className="pt-4 pb-2 font-medium flex flex-col divide-y divide-darkgrey">
-            <div className="grid items-center grid-cols-[1.7rem_auto] py-2">
-              <div className="flex justify-center">
-                <Mail />
-              </div>
-              <p className="ml-1 text-sm">{props.mail}</p>
+          <div className="p-4">
+            <div>
+              <p className="text-darkgrey text-sm">{contact.function}</p>
+              <h3 className="font-bold text-md uppercase">{contact.name}</h3>
             </div>
-            <div className="grid items-center grid-cols-[1.7rem_auto] py-2">
-              <div className="flex justify-center">
-                <Phone />
+            <div className="pt-4 pb-2 font-medium flex flex-col divide-y divide-darkgrey">
+              <div className="grid items-center grid-cols-[1.7rem_auto] py-2">
+                <div className="flex justify-center">
+                  <Mail />
+                </div>
+                <p className="ml-1 text-sm">{contact.mail}</p>
               </div>
-              <p className="ml-1 text-sm">{props.phone}</p>
+              <div className="grid items-center grid-cols-[1.7rem_auto] py-2">
+                <div className="flex justify-center">
+                  <Phone />
+                </div>
+                <p className="ml-1 text-sm">{contact.phone}</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      ))}
     </>
   );
 }

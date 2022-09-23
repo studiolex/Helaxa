@@ -12,7 +12,7 @@ function Waterjet() {
   return (
     <article
       id="waterjet"
-      className="pt-14 mt-16 md:mt-0 md:pt-20 xs:pt-14 xs:mt-10"
+      className="pt-12 mt-16 md:mt-0 md:pt-20 xs:pt-14 xs:mt-10"
     >
       <h2 className="hidden">Waterjet</h2>
       <section className="color-grey grid grid-cols-24 gap-2 bg-lightgrey pt-10 pb-4 relative">
@@ -118,7 +118,30 @@ function Waterjet() {
       <section className="grid grid-cols-24 my-32 lg:my-24 md:my-20 ">
         {" "}
         <h3 className="hidden">Waterjet gallery</h3>
-        <Gallery />
+        <Gallery
+          images={[
+            {
+              link: "waterjet",
+              href: "/images/waterjet/waterjet_1.png",
+              placeholder: "Dit is een foto van een sliertje",
+            },
+            {
+              link: "waterjet",
+              href: "/images/waterjet/waterjet_2.png",
+              placeholder: "Dit is een foto van een waterjetter",
+            },
+            {
+              link: "waterjet",
+              href: "/images/waterjet/waterjet_3.png",
+              placeholder: "Dit is een foto van een srtje",
+            },
+            {
+              link: "waterjet",
+              href: "/images/waterjet/waterjet_4.png",
+              placeholder: "Dit is een foton een slitter",
+            },
+          ]}
+        />{" "}
       </section>
     </article>
   );

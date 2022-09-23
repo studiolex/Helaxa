@@ -6,6 +6,9 @@ import Logo from "../public/icons/navigation_logo.svg";
 import Navitems from "../components/navitems.js";
 import Navextra from "../components/navextra.js";
 
+import MenuOpen from "../public/icons/menu_opened.svg";
+import MenuClosed from "../public/icons/menu_closed.svg";
+
 function Navbar() {
   return (
     <>
@@ -28,9 +31,22 @@ function Navbar() {
               <div className="xs:hidden md:row-start-1 md:col-span-2  md:pb-2 md:mb-2">
                 <Navextra />
               </div>
-              <Disclosure.Button as={Fragment} className="hidden xs:flex">
-                <button>Open menu</button>
+              {/* {({ open }) => ( */}
+              <Disclosure.Button className="hidden xs:flex">
+                <span className="sr-only">Open main menu</span>
+                {/* {open ? ( */}
+                <div className="ui-open:hidden ui-not-open:flex flex items-center space-x-2">
+                  <p className="font-black text-gold uppercase ">Menu</p>
+                  <MenuClosed />
+                </div>
+                {/* ) : ( */}
+                <div className="ui-not-open:hidden ui-open:flex items-center space-x-2">
+                  <p className="font-black text-gold uppercase ">Close</p>
+                  <MenuOpen />{" "}
+                </div>
+                {/* )}{" "} */}
               </Disclosure.Button>
+              {/* )} */}
             </ul>
           </div>
         </nav>{" "}

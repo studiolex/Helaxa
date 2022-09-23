@@ -9,7 +9,7 @@ const array = [{ img: "blabla" }];
 
 function Slitting() {
   return (
-    <article className="pt-14 md:pt-20 xs:pt-14" id="slitting">
+    <article className="pt-12 lg:pt-6 md:pt-0 xs:pt-0" id="slitting">
       <h2 className="hidden">Slitting</h2>
       <section>
         {/* Slitting header*/}
@@ -105,12 +105,12 @@ function Slitting() {
             {
               link: "Slitting",
               href: "/images/slitting/slit_3.png",
-              placeholder: "Dit is een foto van een sliertje",
+              placeholder: "Dit is een foto van een ertje",
             },
             {
               link: "Slitting",
               href: "/images/slitting/slit_4.png",
-              placeholder: "Dit is een foto van een slitter",
+              placeholder: "Dit is een fovan een slitter",
             },
           ]}
         />
