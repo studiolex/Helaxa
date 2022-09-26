@@ -1,9 +1,9 @@
 import Image from "next/image";
 import StockholderIcon from "../public/icons/stockholder_icon.svg";
 
-import stockholderSquare from "../public/images/home/stockholder_square.png";
-import stockholderVertical from "../public/images/home/stockholder_vertical.png";
-import stockholderHorizontal from "../public/images/home/stockholder_horizontal.png";
+import stockholderSquare from "../public/images/home/stockholder_square.jpg";
+import stockholderVertical from "../public/images/home/stockholder_vertical.jpg";
+import stockholderHorizontal from "../public/images/home/stockholder_horizontal.jpg";
 
 function Stockholder() {
   return (
@@ -67,7 +67,10 @@ function Stockholder() {
             </div>{" "}
             <p className="text-sm leading-relaxed">
               We have a regular stock available in our warehouse for immediate
-              delivery of STAINLESS STEEL plates, coils and sheets.
+              delivery of{" "}
+              <span className=" italic font-semibold">
+                stainless steel plates, coils and sheets.
+              </span>
               <br /> <br />
               In case you have ANY inquiries or offers for any kind of quality
               or format in Stainless Steel, please do not hesitate to contact
@@ -83,7 +86,7 @@ function Stockholder() {
               <p className="font-sans text-md font-bold text-green">
                 Any inquires?{" "}
               </p>
-              <p className="font-serif">
+              <p className="font-sans ">
                 For futher inquiries please contact Marc for more information.
               </p>
             </div>

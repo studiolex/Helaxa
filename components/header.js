@@ -27,7 +27,7 @@ export default function Header() {
   return (
     <article className=" min-h-[100vh] flex flex-col justify-center">
       {/* Title */}
-      <div className="grid grid-cols-24 my-auto py-6 lg:py-20 sm:py-16 xs:py-10">
+      <div className="grid grid-cols-24 my-auto py-6 lg:py-12 md:py-20 sm:py-16 xs:py-10">
         <div className="col-start-3  xl:col-start-2 col-end-25 lg:col-end-24 mt-[4rem]">
           <h1 className="text-3xl font-bold font-mono text-black md:text-2xl sm:text-xl">
             Helaxa, <span className="text-green">your</span> stainless steel
@@ -38,26 +38,27 @@ export default function Header() {
           </h1>
         </div>
       </div>
-      <div className=" grid grid-cols-[1fr_1.05fr] lg:grid-cols-2 bg-lightgrey md:flex md:flex-col">
-        {/* Image */}
+      <div className=" grid grid-cols-[1fr_1.05fr]  bg-lightgrey lg:flex lg:flex-col">
         <div className="lg:col-span-1 relative">
-          <div className="relative w-full h-full">
+          <div className="relative w-full h-full lg:mx-auto">
+            {/* Video */}
             <video
               ref={videoRef}
               controls={false}
-              poster="images/home/placeholder.png"
+              // poster="images/home/placeholder.png"
               width="100%"
               height="100%"
               onClick={handlePlayVideo}
             >
-              <source src="videos/helaxa_video.MP4" type="video/mp4"></source>
+              <source src="videos/helaxa_video.mp4" type="video/mp4"></source>
               <p>Sorry your browser doesn&apos;t support this video</p>
             </video>
           </div>
+          {/* Button*/}
           <div
             onClick={handlePlayVideo}
             ref={videoButton}
-            className="playbutton bg-green absolute rounded-full p-2 -right-14 top-[40%] md:top-auto md:-bottom-14 md:right-4 bg-green/50 opacity-100 hover:opacity-90 transition duration-300 ease-in-out cursor-pointer"
+            className="playbutton bg-green absolute rounded-full p-2 -right-14 top-[40%] lg:top-auto lg:-bottom-14 lg:right-4 bg-green/50 opacity-100 hover:opacity-90 transition duration-300 ease-in-out cursor-pointer"
           >
             {playVideo && (
               <p>
@@ -72,8 +73,8 @@ export default function Header() {
           </div>
         </div>
         {/* Information */}
-        <div className="flex py-8 md:py-20 pl-24 sm:px-6 md:px-8  pr-[10vw] xl:pr-[12%] h-full flex-col justify-center space-y-10 lg:space-y-6 md:space-y-12">
-          <p className="text-sm leading-loose">
+        <div className="flex py-8 md:py-20 pl-24 xl:pl-20 sm:px-6 md:px-8  pr-[11vw] xl:pr-[4vw] lg:pr-36 h-full flex-col justify-center space-y-10 xl:space-y-6 lg:space-y-4 md:space-y-12">
+          <p className="text-sm leading-loose lg:py-12">
             <span className=" italic font-semibold">Founded in 2008,</span> with
             allround service being the number one priority. Helaxa&apos;s
             machinery,{" "}
@@ -84,9 +85,9 @@ export default function Header() {
               the biggest waterjet in Europe
             </a>{" "}
             -{" "}
-            <span className="italic">
+            <span className="italic font-medium">
               leader in cutting every material in the perfect shape and size -
-            </span>
+            </span>{" "}
             additioned with a{" "}
             <a
               href="#slitting"
@@ -103,12 +104,12 @@ export default function Header() {
               onClick={handlePlayVideo}
             >
               {playVideo && (
-                <p className="inline-block border-b-2 border-darkgrey text-darkgrey md:border-b-0">
+                <p className="inline-block border-b-2 border-darkgrey text-darkgrey transition duration-300 ease-in-out hover:text-black hover:border-black  md:border-b-0">
                   Pause video
                 </p>
               )}
               {!playVideo && (
-                <p className="text-green inline-block border-b-2 border-green md:border-b-0 md:text-lightgrey">
+                <p className="text-green transition duration-300 ease-in-out hover:text-lightgreen hover:border-lightgreen inline-block border-b-2 border-green md:border-b-0 md:text-lightgrey">
                   Watch video{" "}
                 </p>
               )}
@@ -117,7 +118,7 @@ export default function Header() {
               href="#slitting"
               className="text-sm uppercase text-center md:border-2 md:border-black md:bg-lightgrey py-2 md:px-16 sm:w-full mx-auto"
             >
-              <p className="border-b-[.08rem] border-black inline-block md:border-0">
+              <p className="border-b-[.08rem] border-black hover:border-darkgrey inline-block md:border-0 text-black transition duration-300 ease-in-out hover:text-darkgrey">
                 {" "}
                 Our services
               </p>

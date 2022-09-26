@@ -53,11 +53,16 @@ function Footer() {
             +32 3 237 17 40
           </a>
         </div>
-        <div className="flex items-center mt-auto col-start-1 lg:row-start-3 lg:col-span-2 lg:justify-center">
+        <a
+          href="https://www.studiolex.io"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center mt-auto col-start-1 lg:row-start-3 lg:col-span-2 lg:justify-center"
+        >
           <p className="mr-1">Created by {""}</p>
           {""}
           <Studiolex />
-        </div>
+        </a>
       </ul>
     </footer>
   );

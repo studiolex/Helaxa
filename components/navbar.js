@@ -60,7 +60,7 @@ function Navbar() {
         >
           <Disclosure.Panel
             as="ul"
-            className="mobilenav hidden xs:flex xs:flex-col  w-full h-screen fixed z-[11] items-center justify-center xs:pb-12 bg-white/90"
+            className="mobilenav hidden xs:flex xs:flex-col  w-full h-screen fixed z-[11] items-center justify-center xs:pb-16 bg-white/90"
           >
             <Navitems />
             <Navextra />

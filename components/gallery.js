@@ -76,7 +76,7 @@ function Gallery({ images }) {
             <SwiperSlide key={image.placeholder}>
               <div className="">
                 <Image
-                  src={image.href}
+                  src={image.src}
                   alt={image.placeholder}
                   width={300}
                   height={300}

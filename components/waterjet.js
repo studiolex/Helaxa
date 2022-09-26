@@ -5,8 +5,8 @@ import Sheetsize from "../public/icons/sheetsize_green.svg";
 import Advantage from "../public/icons/advantage_green.svg";
 import WaterjetIcon from "../public/icons/waterjet_icon.svg";
 
-import waterjetVertical from "../public/images/home/waterjet_vertical.png";
-import waterjetHorizontal from "../public/images/home/waterjet_horizontal.png";
+import waterjetVertical from "../public/images/home/waterjet_vertical.jpg";
+import waterjetHorizontal from "../public/images/home/waterjet_horizontal.jpg";
 
 function Waterjet() {
   return (
@@ -121,24 +121,32 @@ function Waterjet() {
         <Gallery
           images={[
             {
-              link: "waterjet",
-              href: "/images/waterjet/waterjet_1.png",
-              placeholder: "Dit is een foto van een sliertje",
+              src: "/images/waterjet/waterjet_machine.jpg",
+              placeholder: "Our XXL Waterjet machine.",
             },
             {
-              link: "waterjet",
-              href: "/images/waterjet/waterjet_2.png",
-              placeholder: "Dit is een foto van een waterjetter",
+              src: "/images/waterjet/waterjet_circles.jpg",
+              placeholder: "Waterjet circles cutout",
             },
             {
-              link: "waterjet",
-              href: "/images/waterjet/waterjet_3.png",
-              placeholder: "Dit is een foto van een srtje",
+              src: "/images/waterjet/waterjet_cutout.jpg",
+              placeholder: "Waterjet detailing",
             },
             {
-              link: "waterjet",
-              href: "/images/waterjet/waterjet_4.png",
-              placeholder: "Dit is een foton een slitter",
+              src: "/images/waterjet/waterjet_plate.jpg",
+              placeholder: "Waterjet large plate cutting",
+            },
+            {
+              src: "/images/waterjet/waterjet_small_strips.jpg",
+              placeholder: "Waterjet smal rectangular detailing",
+            },
+            {
+              src: "/images/waterjet/waterjet_side.jpg",
+              placeholder: "Waterjet bevel edges",
+            },
+            {
+              src: "/images/waterjet/waterjet_thick.jpg",
+              placeholder: "Waterjet thick, large plate cutout",
             },
           ]}
         />{" "}

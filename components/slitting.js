@@ -3,17 +3,17 @@ import Gallery from "../components/gallery.js";
 import Thickness from "../public/icons/thickness_green.svg";
 import Width from "../public/icons/width_green.svg";
 import SlittingIcon from "../public/icons/slitting_icon.svg";
-import slittingImg from "../public/images/home/slitting.png";
+import slittingImg from "../public/images/home/slitting.jpg";
 
 const array = [{ img: "blabla" }];
 
 function Slitting() {
   return (
-    <article className="pt-12 lg:pt-6 md:pt-0 xs:pt-0" id="slitting">
+    <article className="">
       <h2 className="hidden">Slitting</h2>
-      <section>
+      <section id="slitting">
         {/* Slitting header*/}
-        <div className="color-grey grid grid-cols-24 gap-2 bg-lightgrey pt-12 pb-10">
+        <div className="color-grey grid grid-cols-24 gap-2 bg-lightgrey pt-20 md:pt-24 sm:pt-20 pb-10">
           {/* Icon*/}
           <div className="col-start-3 xl:col-start-2 col-end-12  md:col-end-9 flex justify-end z-10 ">
             <div className=" ml-auto">
@@ -34,12 +34,18 @@ function Slitting() {
         <div className="grid grid-cols-24 gap-4 w-full grid-rows-2 background md:grid-rows-[auto_auto] sm:gap-0">
           {/* Paragraph*/}
           <div className="col-start-13 col-end-21 xl:col-end-22 lg:col-end-23 md:col-end-24 py-6 h-full flex flex-col justify-between row-end-1 row-start-1 space-y-12 sm:col-start-2">
-            <p className="text-sm leading-relaxed">
-              Since 2018 we have our own Slitting Line for slitting of Stainless
-              Steel Coils with widths up to 650 mm and weight up to 10 Tons.
-              Thickness range between 0,40 and 4,00 mm is possible. We can meet
-              your requirements with coil slits as narrow as 10 mm and OD max. 2
-              metres.
+            <p className="text-sm leading-loose">
+              <span className=" italic font-semibold">Since 2018</span> we have
+              our own Slitting Line for slitting of Stainless Steel Coils with
+              widths up to
+              <span className=" italic font-semibold"> 1560mm</span> and weight
+              up to <span className="italic font-semibold">25 Tons.</span>{" "}
+              Thickness range between{" "}
+              <span className="italic font-semibold">0,20</span> and{" "}
+              <span className="italic font-semibold">4,00 mm</span> is possible.
+              We can meet your requirements with coil slits as narrow as
+              <span className=" italic font-semibold"> 10 mm</span> and{" "}
+              <span className="italic font-semibold">OD max. 2 metres.</span>
             </p>
           </div>
           {/* Details*/}
@@ -93,24 +99,24 @@ function Slitting() {
         <Gallery
           images={[
             {
-              link: "Slitting",
-              href: "/images/slitting/slit_1.png",
-              placeholder: "Dit is een foto van een sliertje",
+              src: "/images/slitting/slitting_machine.jpg",
+              placeholder: "Slitting machine strips",
             },
             {
-              link: "Slitting",
-              href: "/images/slitting/slit_2.png",
-              placeholder: "Dit is een foto van een slitter",
+              src: "/images/slitting/slitting_narrow_full.jpg",
+              placeholder: "Narrow slitting strips",
             },
             {
-              link: "Slitting",
-              href: "/images/slitting/slit_3.png",
-              placeholder: "Dit is een foto van een ertje",
+              src: "/images/slitting/slitting_narrow_detail.jpg",
+              placeholder: "Narrow slitting strips detail",
             },
             {
-              link: "Slitting",
-              href: "/images/slitting/slit_4.png",
-              placeholder: "Dit is een fovan een slitter",
+              src: "/images/slitting/slitting_rolled.jpg",
+              placeholder: "Rolled up slitting strips",
+            },
+            {
+              src: "/images/slitting/slitting_thick.jpg",
+              placeholder: "Thick slitting strips",
             },
           ]}
         />
