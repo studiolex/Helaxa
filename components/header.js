@@ -24,6 +24,18 @@ export default function Header() {
     }
   };
 
+  function setupVideos() {
+    for (const video of document.querySelectorAll("video")) {
+      video.controls = false;
+      video.addEventListener("mouseover", () => {
+        video.controls = "controls";
+      });
+      video.addEventListener("mouseout", () => {
+        video.controls = false;
+      });
+    }
+  }
+
   return (
     <article className=" min-h-[100vh] flex flex-col justify-center">
       {/* Title */}
@@ -44,12 +56,17 @@ export default function Header() {
             {/* Video */}
             <video
               ref={videoRef}
-              controls={false}
+              // controls={true}
+              onMouseEnter={setupVideos}
+              onMouseOut={setupVideos}
+              // loop
               // poster="images/home/placeholder.png"
               width="100%"
               height="100%"
               onClick={handlePlayVideo}
             >
+              {/* <source src="videos/helaxa_video.webm" type="video/webm"></source> */}
+
               <source src="videos/helaxa_video.mp4" type="video/mp4"></source>
               <p>Sorry your browser doesn&apos;t support this video</p>
             </video>
@@ -74,7 +91,7 @@ export default function Header() {
         </div>
         {/* Information */}
         <div className="flex py-8 md:py-20 pl-24 xl:pl-20 sm:px-6 md:px-8  pr-[11vw] xl:pr-[4vw] lg:pr-36 h-full flex-col justify-center space-y-10 xl:space-y-6 lg:space-y-4 md:space-y-12">
-          <p className="text-sm leading-loose lg:py-12">
+          <p className="text-sm leading-loose lg:py-10 md:py-2 sm:py-0">
             <span className=" italic font-semibold">Founded in 2008,</span> with
             allround service being the number one priority. Helaxa&apos;s
             machinery,{" "}
@@ -128,7 +145,7 @@ export default function Header() {
       </div>
       <div className="grid grid-cols-24 my-auto py-8 md:py-12">
         {/* Spotlight */}
-        <div className="col-start-3  xl:col-start-2 col-end-23 xl:col-end-24 grid grid-cols-4 md:grid-cols-[2fr_2fr_1fr] mb-auto ">
+        <div className="col-start-3  xl:col-start-2 col-end-23 xl:col-end-24 grid grid-cols-4 md:grid-cols-[2fr_2fr_.8fr] mb-auto ">
           <div className="space-y-1">
             <div className="flex items-center space-x-2">
               <div className="">
