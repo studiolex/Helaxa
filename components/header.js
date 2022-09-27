@@ -60,7 +60,7 @@ export default function Header() {
               onMouseEnter={setupVideos}
               onMouseOut={setupVideos}
               // loop
-              // poster="images/home/placeholder.png"
+              poster="images/home/placeholder.jpg"
               width="100%"
               height="100%"
               onClick={handlePlayVideo}

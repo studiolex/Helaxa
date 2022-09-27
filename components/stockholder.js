@@ -78,12 +78,12 @@ function Stockholder() {
               </span>{" "}
               for any kind of quality or format in Stainless Steel, please do
               not hesitate to{" "}
-              <span
+              <a
                 href="#contact"
                 className="underline italic font-semibold hover:text-lightgreen transition duration-300 ease-in-out cursor-pointer"
               >
                 contact us
-              </span>
+              </a>
               , we are well positioned to assist you for all grades and
               materials.
             </p>

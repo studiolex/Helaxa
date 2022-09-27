@@ -19,8 +19,8 @@ export default function Contactperson({ contacts }) {
             <Image
               src={contact.image}
               alt={contact.placeholder}
-              width={300}
-              height={300}
+              width={280}
+              height={280}
               // placeholder="blur"
             />
           </div>
