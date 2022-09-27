@@ -90,7 +90,7 @@ export default function Header() {
           </div>
         </div>
         {/* Information */}
-        <div className="flex py-8 md:py-20 pl-24 xl:pl-20 sm:px-6 md:px-8  pr-[11vw] xl:pr-[4vw] lg:pr-36 h-full flex-col justify-center space-y-10 xl:space-y-6 lg:space-y-4 md:space-y-12">
+        <div className="flex py-8 md:py-20 pl-24 xl:pl-20 sm:px-4 md:px-8  pr-[11vw] xl:pr-[4vw] lg:pr-36 h-full flex-col justify-center space-y-10 xl:space-y-6 lg:space-y-4 md:space-y-12">
           <p className="text-sm leading-loose lg:py-10 md:py-2 sm:py-0">
             <span className=" italic font-semibold">Founded in 2008,</span> with
             allround service being the number one priority. Helaxa&apos;s
