@@ -46,7 +46,7 @@ function Stockholder() {
               </div>
             </div>
             {/* Information */}
-            <div className="-mt-6 lg:mt-0 col-start-11 lg:col-start-10 md:col-start-2 col-end-22 xl:col-end-23 lg:col-end-24 md:col-end-24 mb-10 flex flex-col justify-center items-center space-y-12 md:space-y-6 justify-self-center md:row-start-2">
+            <div className="-mt-6 lg:mt-0 col-start-11 lg:col-start-10 md:col-start-2 col-end-22 xl:col-end-23 lg:col-end-24 md:col-end-24 mb-10 flex flex-col justify-center space-y-12 md:space-y-6 justify-self-center md:row-start-2">
               <div className="flex space-x-6 md:flex-row-reverse md:space-x-0">
                 {/* Icon*/}
                 <div className=" flex justify-end ">
