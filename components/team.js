@@ -107,22 +107,25 @@ function Team({ contacts }) {
                       </h3>
                     </div>
                     <div className="pt-4 pb-2 font-medium flex flex-col divide-y divide-darkgrey">
-                      <div className="grid items-center grid-cols-[1.7rem_auto] py-2 sm:py-3">
+                      <a
+                        href={contact.mailLink}
+                        className="grid items-center grid-cols-[1.7rem_auto] py-2 cursor-pointer"
+                      >
                         <div className="flex justify-center">
                           <Mail />
                         </div>
-                        <p className="ml-1 text-sm sm:text-md">
+                        <p className="ml-1 text-sm text-black hover:text-lightgreen transition duration-300 ease-in-out ">
                           {contact.mail}
                         </p>
-                      </div>
+                      </a>
                       <a
                         href={contact.phoneLink}
-                        className="grid items-center grid-cols-[1.7rem_auto] py-2 sm:py-3"
+                        className="grid items-center grid-cols-[1.7rem_auto] py-2 cursor-pointer"
                       >
                         <div className="flex justify-center">
                           <Phone />
                         </div>
-                        <p className="ml-1 text-sm sm:text-md">
+                        <p className="ml-1 text-sm text-black hover:text-lightgreen transition duration-300 ease-in-out ">
                           {contact.phone}
                         </p>
                       </a>

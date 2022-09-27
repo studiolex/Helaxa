@@ -14,7 +14,8 @@ function Contact() {
           {
             function: "CEO, Sales & Slitting",
             name: "Marc Verbeeck",
-            mail: "mailto:marc@helaxa.com",
+            mail: "marc@helaxa.com",
+            mailLink: "mailto:marc@helaxa.com",
             phone: "+32 3 237 17 40",
             phoneLink: "tel:+32 3 237 17 40",
             image: "/images/contact/contact_marc.jpg",
@@ -22,7 +23,8 @@ function Contact() {
           {
             function: "Waterjet",
             name: "Marc van 'T Westeinde",
-            mail: "mailto:westeinde@helaxa.com",
+            mail: "westeinde@helaxa.com",
+            mailLink: "mailto:westeinde@helaxa.com",
             phone: "+32 3 326 18 40",
             phoneLink: "tel:+32 3 326 18 40",
             image: "/images/contact/contact_westeinde.jpg",
@@ -30,7 +32,8 @@ function Contact() {
           {
             function: "Administration",
             name: "Linda Weekers",
-            mail: "mailto:linda@helaxa.com",
+            mail: "linda@helaxa.com",
+            mailLink: "mailto:linda@helaxa.com",
             phone: "+32 3 237 17 40",
             phoneLink: "tel:+32 3 237 17 40",
             image: "/images/contact/contact_linda.jpg",
@@ -38,7 +41,8 @@ function Contact() {
           {
             function: "PR & Marketing",
             name: "Virginia De Groof",
-            mail: "mailto:virginia@helaxa.com",
+            mail: "virginia@helaxa.com",
+            mailLink: "mailto:virginia@helaxa.com",
             phone: "+32 3 237 17 40",
             phoneLink: "tel:+32 3 237 17 40",
             image: "/images/contact/contact_virginia.jpg",
@@ -46,7 +50,8 @@ function Contact() {
           {
             function: "Finance & Accountancy",
             name: "Helena verbeeck",
-            mail: "mailto:helena@helaxa.com",
+            mail: "helena@helaxa.com",
+            mailLink: "mailto:helena@helaxa.com",
             phone: "+32 3 237 17 40",
             phoneLink: "tel:+32 3 237 17 40",
             image: "/images/contact/contact_helena.jpg",
