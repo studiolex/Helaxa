@@ -72,9 +72,19 @@ function Stockholder() {
                 stainless steel plates, coils and sheets.
               </span>
               <br /> <br />
-              In case you have ANY inquiries or offers for any kind of quality
-              or format in Stainless Steel, please do not hesitate to contact
-              us, we are well positioned to assist you for all grades and
+              In case you have{" "}
+              <span className=" italic font-semibold">
+                any inquiries or offers
+              </span>{" "}
+              for any kind of quality or format in Stainless Steel, please do
+              not hesitate to{" "}
+              <span
+                href="#contact"
+                className="underline italic font-semibold hover:text-lightgreen transition duration-300 ease-in-out cursor-pointer"
+              >
+                contact us
+              </span>
+              , we are well positioned to assist you for all grades and
               materials.
             </p>
           </div>

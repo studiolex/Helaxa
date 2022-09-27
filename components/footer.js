@@ -46,10 +46,16 @@ function Footer() {
           >
             Postbaan 86, 2910 Essen, Belgium
           </a>
-          <a className="hover:text-lightgreen transition ease-in-out duration-300">
+          <a
+            href="mailto:info@helaxa.com"
+            className="hover:text-lightgreen transition ease-in-out duration-300"
+          >
             info@helaxa.com
           </a>
-          <a className="hover:text-lightgreen transition ease-in-out duration-300">
+          <a
+            href="callto:+3232371740"
+            className="hover:text-lightgreen transition ease-in-out duration-300"
+          >
             +32 3 237 17 40
           </a>
         </div>

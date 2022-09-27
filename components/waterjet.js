@@ -40,10 +40,18 @@ function Waterjet() {
       <div className="grid grid-cols-24 gap-4 w-full grid-rows-2 md:grid-rows-[auto_auto] background md:gap-0">
         {/* Paragraph*/}
         <div className="col-start-5 xl:col-start-4 lg:col-start-2 col-end-14 lg:col-end-15 sm:col-end-24 py-6 flex flex-col justify-center row-end-1 row-start-1 space-y-12 sm:col-start-2 md:my-auto">
-          <p className="text-sm leading-relaxed">
-            Serving many sectors like offshore, shipbuilding, tankbuilding,
-            petrochemical industry, etc... This worldclass waterjet enables our
-            customers to save time, money and increase their competitive ‘EDGE’.
+          <p className="text-sm leading-loose">
+            Serving many sectors like{" "}
+            <span className=" italic font-semibold">
+              offshore, shipbuilding, tankbuilding, petrochemical industry,
+              etc...
+            </span>{" "}
+            This worldclass waterjet enables our customers to save time, money
+            and increase{" "}
+            <span className=" italic font-semibold">
+              their competitive ‘EDGE’
+            </span>
+            .
           </p>
           <div className="flex items-center flex-wrap ">
             <div className="space-y-1 mr-12 md:mb-4">
