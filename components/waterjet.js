@@ -60,7 +60,7 @@ function Waterjet() {
                 <div className="flex items-center space-x-4 ">
                   <Sheetsize />
                   <p className="font-bold uppercase text-xl">
-                    4000mm x 18000mm
+                    4500mm x 20000mm
                   </p>
                 </div>
                 <p className="text-darkgrey font-semibold  text-md">
@@ -70,7 +70,7 @@ function Waterjet() {
               <div className="space-y-1 md:mb-4">
                 <div className="flex items-center space-x-2 ">
                   <Thickness />
-                  <p className="font-bold uppercase text-xl">200mm</p>
+                  <p className="font-bold uppercase text-xl">400mm</p>
                 </div>
                 <p className="text-darkgrey font-semibold text-md">Thickness</p>
               </div>
