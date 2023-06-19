@@ -30,7 +30,7 @@ function Contact() {
             image: "/images/contact/contact_westeinde.jpg",
           },
           {
-            function: "Administration",
+            function: "Operations",
             name: "Linda Weekers",
             mail: "linda@helaxa.com",
             mailLink: "mailto:linda@helaxa.com",
