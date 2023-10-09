@@ -45,7 +45,7 @@ function Footer() {
               rel="noopener noreferrer"
               className="hover:text-lightgreen transition ease-in-out duration-300"
             >
-              Postbaan 86, 2910 Essen, Belgium
+              Postbaan 68, 2910 Essen, Belgium
             </a>
             <a
               href="mailto:info@helaxa.com"
